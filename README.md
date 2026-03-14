@@ -24,9 +24,4 @@ I am a web developer passionate about creating modern, responsive, and user-frie
 - HTML5, CSS3, JavaScript
 - Optional: Add frameworks/libraries you used (e.g., React, Tailwind CSS)
 
----
 
-## How to Run Locally
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/mchidozie-pixel/mchidozie-pixel.github.io.git
