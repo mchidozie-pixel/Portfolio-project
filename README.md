@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! 🎉
 
 I built this to showcase my projects, skills, and experiences. You can check it out live here:
 
-🌐 **Live Website:** [https://mchidozie-pixel.github.io](https://mchidozie-pixel.github.io)
+🌐 **Live Website:** [https://mchidozie-pixel.github.io/Portfolio-project/(https://mchidozie-pixel.github.io)
 
 ---
 
