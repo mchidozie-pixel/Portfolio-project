@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;  /* ← ALWAYS show scrollbar, prevents page shift */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0B0B0B;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.name {
+    font-family: Orbitron, sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.name1 {
+    font-family: Orbitron, sans-serif;
+    color: #EA2449;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+    
+.nav-link {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;       
+    gap: 20px;
+}
+
+.nav-link a {
+    color: white;
+    font-weight: 700;
+    font-family: raleway, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px 10px;  /* ← add padding so hover background is visible */
+    border-radius: 3px;
+}
+
+.nav-link a:hover {
+    color: #EA2449;
+    background-color: rgba(234, 36, 73, 0.2);  /* ← semi-transparent red instead of yellow */
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: #0f0f0f;
+    gap: 30px;
+}
+
+/* LEFT SIDE */
+.hero-content {
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+    margin-top: -90px;
+}
+
+/* RIGHT SIDE */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+     
+}
+
+
+.hero-image img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+
+.Title {
+    font-size: 45px;   
+    font-weight: 700;
+    font-family: Orbitron, sans-serif;
+    color: white;
+    background: linear-gradient(to right, #ffffff, #EA2449 70%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    line-height: 1.2;
+} 
+
+.Title2 {
+    font-size: 33px;   
+    font-weight: 300;
+    font-family: Orbitron, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.paragraph {
+    font-size: 17px;   
+    font-weight: 400;
+    font-family: raleway, sans-serif;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+/* BUTTONS */
+.button {
+    background-color: #EA2449;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #EA2449;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-text {
+    font-size: 14px;   
+    font-weight: 600;
+    font-family: raleway, sans-serif;
+    color: black;
+}
+
+.butt {
+    background-color: transparent;
+    border: 2px solid #EA2449;
+    color: #EA2449;
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 0 8px rgba(234, 36, 73, 0.3);
+    transition: all 0.3s ease;
+}
+
+.butt:hover {
+    box-shadow: 0 0 15px #EA2449;
+    transform: scale(1.05);
+}
+
+.btn-icons {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-texts {
+    font-size: 14px;   
+    font-weight: 600;
+    font-family: raleway, sans-serif;
+    color: #EA2449;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 60px 30px 30px;
+    background-color: #0B0B0B;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.miracle {
+    font-family: Orbitron, sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: Orbitron, sans-serif;
+    color: #EA2449;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.paragraph-tagline {
+    font-family: raleway, sans-serif;
+    color: #cccccc;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* General section styling */
+.section-wrapper {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the title and the cards */
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #EA2449; /* Your signature red */
+    margin-bottom: 30px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+/* The Grid that holds your cards */
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1100px; /* Keeps your content from hitting the screen edges */
+}
+
+/* The Card itself */
+.info-card {
+    background: #151515;
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px; /* Cards stay a nice size */
+    font-family: 'Raleway', sans-serif;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-card:hover {
+    border-color: #EA2449;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(234, 36, 73, 0.2);
+}
+
+.info-card h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.info-card p {
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project-media {
+    display: flex;         /* Puts images in a row */
+    flex-wrap: wrap;       /* Drops them to a new line if they are too big */
+    justify-content: center; /* Centers the whole group */
+    gap: 20px;             /* Space between the images */
+    width: 100%;           /* Make the container wide so images can breathe */
+    margin-top: 20px;
+}
+
+.project-media img {
+    /* EDIT THESE TWO NUMBERS TO CHANGE THE SIZE */
+    width: 250px;          
+    height: 150px;         
+
+    object-fit: cover;     /* Stops the "squashing" - it crops the image instead */
+    border-radius: 10px;   /* Rounded corners */
+    border: 2px solid #333; /* A nice border */
+    transition: 0.3s;
+}
+
+.project-media img:hover {
+    border-color: #EA2449; /* Red glow when you point at it */
+    transform: scale(1.05); /* Slight zoom */
+}
+
+.contact-icons{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+margin-top:20px;
+}
+
+.social-icon{
+width:30px;
+height:30px;
+object-fit:contain;
+transition:transform 0.3s ease;
+}
+
+.social-icon:hover{
+transform:scale(1.1);
+}
+
+.footer {
+    font-family: raleway, sans-serif;
+    color: #999999;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .name, .name1 {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        gap: 15px;
+    }
+
+    .nav-link a {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .hero-content {
+        order: 2;
+        text-align: center;
+        margin-top: 0;          /* ← RESET the margin on tablet */
+    }
+
+    .hero-image {
+        order: 1;
+        width: 100%;
+        outline: none;          /* ← remove lime outline on mobile */
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+
+    .Title {
+        font-size: 28px;
+    }
+
+    .Title2 {
+        font-size: 14px;
+    }
+
+    .paragraph {
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .button, .butt {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    html {
+      overflow-y: scroll;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .name, .name1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .nav-link {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .nav-link a {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+
+    .hero {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .hero-content {
+        margin-top: 0;          /* ← keep it reset on mobile */
+    }
+
+    .hero-image {
+        outline: none;          /* ← remove lime outline */
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .Title {
+        font-size: 22px;
+        line-height: 1.1;
+    }
+
+    .Title2 {
+        font-size: 12px;
+    }
+
+    .paragraph {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .button, .butt {
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 10px 15px;
+    }
+
+    .btn-text, .btn-texts {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 40px 15px 20px;
+    }
+
+    .miracle, .title {
+        font-size: 20px;
+    }
+
+    .paragraph-tagline {
+        font-size: 11px;
+    }
+}
